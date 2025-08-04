@@ -23,7 +23,7 @@ Generates product suggestions based on:
 ## 🛠️ Tech Stack
 
 - **Frontend**: React + TailwindCSS + Recharts
-- **Backend**: Express.js + MongoDB (Mongoose)
+- **Backend**: Express.js 
 - **AI/ML**: Intent-based logic and custom scoring algorithm
 - **Others**: Session management, rate limiting, security middlewares
 
