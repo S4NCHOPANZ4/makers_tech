@@ -1,5 +1,5 @@
 export const fetchUsersData = async () => {
-  const res = await fetch("http://localhost:3030/apiv1/user", {
+  const res = await fetch("https://makers-tech-sv.onrender.com/apiv1/user", {
     method: "GET",
     credentials: "include",
   });

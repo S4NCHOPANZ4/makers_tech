@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3030';
+const BASE_URL = 'https://makers-tech-sv.onrender.com';
 
 export const sendMessageToAI = async (message, userId = 'user_001') => {
   try {

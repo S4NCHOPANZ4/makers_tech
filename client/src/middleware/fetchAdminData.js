@@ -1,5 +1,5 @@
 export const fetchAdminData = async () => {
-  const res = await fetch("http://localhost:3030/apiv1/admin", {
+  const res = await fetch("https://makers-tech-sv.onrender.com/apiv1/admin", {
     method: "GET",
     credentials: "include",
   });
