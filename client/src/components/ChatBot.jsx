@@ -119,19 +119,17 @@ const ChatBot = () => {
       <div className="flex-1 overflow-y-auto scrollable p-6 max-h-[calc(100vh-180px)]">
         {!conversationStarted ? (
           <div className="flex items-center justify-center h-full">
-            <div className="text-center bg-white rounded-2xl p-8 shadow-lg max-w-md">
+            <div className="text-center bg-gray-700 rounded-2xl p-8 shadow-lg max-w-md">
               <div className="relative mb-6">
                 <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto">
                   <Bot className="w-10 h-10 text-white" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                  <Sparkles className="w-4 h-4 text-white animate-pulse" />
-                </div>
+
               </div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-3">
+              <p className="text-2xl font-bold text-gray-200 mb-3">
                 Your Personal Shopping Assistant
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
+              </p>
+              <p className="text-gray-300 leading-relaxed">
                 I'm here to help you find exactly what you need! Ask me about our inventory, 
                 get product details, or let me recommend the perfect item for you.
               </p>
@@ -234,7 +232,7 @@ const ChatBot = () => {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               onKeyPress={handleKeyPress}
-              className="w-full border  rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-gray-700 text-gray-200 placeholder-gray-500 resize-none min-h-[50px] max-h-32 scrollable transition-all duration-200"
+              className="w-full   rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-gray-700 text-gray-200 placeholder-gray-500 resize-none min-h-[50px] max-h-32 scrollable transition-all duration-200"
               placeholder="Ask me: 'How many computers are available?' or 'Tell me about the Dell laptop'"
               disabled={isTyping}
               rows={1}
