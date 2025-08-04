@@ -28,9 +28,9 @@ const Admin = () => {
     <div className="flex-1 flex flex-col h-screen">
       <NavBar />
       <div className={`flex-1  overflow-y-auto scrollable`}>
-        {session && session.authenticated ? 
+        {/* {session && session.authenticated ?  */}
         <AdminDashboard/>
-        : <LoginGuest/>}
+         {/* : <LoginGuest/>} */}
       </div>
     </div>
   );
