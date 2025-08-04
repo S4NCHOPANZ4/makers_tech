@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 app.use(cors({
-    origin: ["https://makers-tech.vercel.app/"], 
+    origin: ["https://makers-tech.vercel.app"], 
     credentials: true,
 }));
   
