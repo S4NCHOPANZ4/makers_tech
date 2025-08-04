@@ -29,9 +29,9 @@ const Recomendations = () => {
     <div className="flex-1 flex flex-col h-screen">
       <NavBar />
       <div className={`flex-1  overflow-y-auto scrollable`}>
-        {session && session.authenticated ? 
+        {/* {session && session.authenticated ?  */}
         <RecomendationsDashboard/>
-        : <LoginGuest/>}
+        {/* : <LoginGuest/>} */}
       </div>
     </div>
   );
