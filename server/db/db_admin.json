@@ -1,0 +1,212 @@
+{
+  "overview": {
+    "totalUsers": 12543,
+    "newUsersToday": 45,
+    "totalSales": 2456789,
+    "salesGrowth": 12.5,
+    "totalOrders": 8934,
+    "averageOrderValue": 275,
+    "inventoryValue": 1234567,
+    "lowStockItems": 23
+  },
+  "products": [
+    {
+      "id": "p001",
+      "name": "iPhone 15 Pro",
+      "category": "Smartphones",
+      "brand": "Apple",
+      "price": 1299,
+      "stock": 45,
+      "sold": 234,
+      "views": 12450,
+      "revenue": 304266,
+      "rating": 4.8,
+      "lastRestocked": "2025-07-28"
+    },
+    {
+      "id": "p002",
+      "name": "Samsung Galaxy S24 Ultra",
+      "category": "Smartphones",
+      "brand": "Samsung",
+      "price": 1199,
+      "stock": 32,
+      "sold": 189,
+      "views": 9876,
+      "revenue": 226611,
+      "rating": 4.7,
+      "lastRestocked": "2025-07-25"
+    },
+    {
+      "id": "p003",
+      "name": "MacBook Air M3",
+      "category": "Laptops",
+      "brand": "Apple",
+      "price": 1399,
+      "stock": 18,
+      "sold": 167,
+      "views": 8765,
+      "revenue": 233633,
+      "rating": 4.8,
+      "lastRestocked": "2025-07-20"
+    },
+    {
+      "id": "p004",
+      "name": "Dell XPS 13",
+      "category": "Laptops",
+      "brand": "Dell",
+      "price": 1099,
+      "stock": 28,
+      "sold": 145,
+      "views": 7654,
+      "revenue": 159355,
+      "rating": 4.6,
+      "lastRestocked": "2025-07-30"
+    },
+    {
+      "id": "p005",
+      "name": "ASUS ROG Strix",
+      "category": "Gaming",
+      "brand": "ASUS",
+      "price": 1899,
+      "stock": 12,
+      "sold": 98,
+      "views": 6543,
+      "revenue": 186102,
+      "rating": 4.9,
+      "lastRestocked": "2025-07-15"
+    },
+    {
+      "id": "p006",
+      "name": "AirPods Pro",
+      "category": "Accessories",
+      "brand": "Apple",
+      "price": 249,
+      "stock": 89,
+      "sold": 456,
+      "views": 15678,
+      "revenue": 113544,
+      "rating": 4.7,
+      "lastRestocked": "2025-08-01"
+    },
+    {
+      "id": "p007",
+      "name": "Nintendo Switch OLED",
+      "category": "Gaming",
+      "brand": "Nintendo",
+      "price": 349,
+      "stock": 67,
+      "sold": 234,
+      "views": 11234,
+      "revenue": 81666,
+      "rating": 4.6,
+      "lastRestocked": "2025-07-22"
+    },
+    {
+      "id": "p008",
+      "name": "Sony WH-1000XM5",
+      "category": "Accessories",
+      "brand": "Sony",
+      "price": 399,
+      "stock": 43,
+      "sold": 178,
+      "views": 8900,
+      "revenue": 71022,
+      "rating": 4.8,
+      "lastRestocked": "2025-07-18"
+    },
+    {
+      "id": "p009",
+      "name": "Logitech MX Master 4",
+      "category": "Accessories",
+      "brand": "Logitech",
+      "price": 149,
+      "stock": 105,
+      "sold": 312,
+      "views": 5234,
+      "revenue": 46488,
+      "rating": 4.5,
+      "lastRestocked": "2025-08-02"
+    },
+    {
+      "id": "p010",
+      "name": "HP Omen 16",
+      "category": "Laptops",
+      "brand": "HP",
+      "price": 1599,
+      "stock": 20,
+      "sold": 75,
+      "views": 3421,
+      "revenue": 119925,
+      "rating": 4.4,
+      "lastRestocked": "2025-07-29"
+    }
+  ],
+  "users": {
+    "totalUsers": 12543,
+    "newUsers": [
+      { "date": "2025-07-28", "count": 42 },
+      { "date": "2025-07-29", "count": 38 },
+      { "date": "2025-07-30", "count": 51 },
+      { "date": "2025-07-31", "count": 47 },
+      { "date": "2025-08-01", "count": 55 },
+      { "date": "2025-08-02", "count": 49 },
+      { "date": "2025-08-03", "count": 45 },
+      { "date": "2025-08-04", "count": 50 },
+      { "date": "2025-08-05", "count": 52 }
+    ],
+    "demographics": {
+      "ageGroups": [
+        { "name": "18-25", "value": 2845, "percentage": 22.7 },
+        { "name": "26-35", "value": 4217, "percentage": 33.6 },
+        { "name": "36-45", "value": 3156, "percentage": 25.2 },
+        { "name": "46-55", "value": 1891, "percentage": 15.1 },
+        { "name": "56+", "value": 434, "percentage": 3.4 }
+      ],
+      "locations": [
+        { "city": "Bogotá", "users": 3762, "percentage": 30.0 },
+        { "city": "Medellín", "users": 2258, "percentage": 18.0 },
+        { "city": "Cali", "users": 1880, "percentage": 15.0 },
+        { "city": "Barranquilla", "users": 1254, "percentage": 10.0 },
+        { "city": "Other", "users": 3389, "percentage": 27.0 }
+      ]
+    }
+  },
+  "sales": {
+    "monthlyRevenue": [
+      { "month": "January", "revenue": 187500, "orders": 678 },
+      { "month": "February", "revenue": 195600, "orders": 712 },
+      { "month": "March", "revenue": 203400, "orders": 745 },
+      { "month": "April", "revenue": 189700, "orders": 689 },
+      { "month": "May", "revenue": 215800, "orders": 798 },
+      { "month": "June", "revenue": 234500, "orders": 856 },
+      { "month": "July", "revenue": 267800, "orders": 934 },
+      { "month": "August", "revenue": 289500, "orders": 980 },
+      { "month": "September", "revenue": 310000, "orders": 1023 },
+      { "month": "October", "revenue": 328900, "orders": 1101 },
+      { "month": "November", "revenue": 350200, "orders": 1187 },
+      { "month": "December", "revenue": 412000, "orders": 1320 }
+    ],
+    "paymentMethods": [
+      { "method": "Credit Card", "count": 4523, "percentage": 50.6, "value": "credit_card" },
+      { "method": "PSE", "count": 2156, "percentage": 24.1, "value": "pse" },
+      { "method": "Nequi", "count": 1234, "percentage": 13.8, "value": "nequi" },
+      { "method": "Daviplata", "count": 567, "percentage": 6.3, "value": "daviplata" },
+      { "method": "Cash", "count": 454, "percentage": 5.1, "value": "cash" }
+    ]
+  },
+  "inventory": {
+    "categoryStock": [
+      { "category": "Smartphones", "stock": 156, "value": 234500 },
+      { "category": "Laptops", "stock": 89, "value": 189700 },
+      { "category": "Gaming", "stock": 123, "value": 167800 },
+      { "category": "Accessories", "stock": 267, "value": 89600 },
+      { "category": "Wearables", "stock": 84, "value": 75200 }
+    ],
+    "lowStockAlerts": [
+      { "id": "p005", "name": "ASUS ROG Strix", "stock": 12, "threshold": 20 },
+      { "id": "p003", "name": "MacBook Air M3", "stock": 18, "threshold": 25 },
+      { "id": "p008", "name": "Sony WH-1000XM5", "stock": 43, "threshold": 50 },
+      { "id": "p010", "name": "HP Omen 16", "stock": 20, "threshold": 30 }
+    ]
+  }
+}

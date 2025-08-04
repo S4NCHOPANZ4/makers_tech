@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* Aplica a cualquier elemento con clase scrollable */
+.scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: transparent; /* fondo transparente */
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #111827; /* Tailwind bg-gray-900 */
+  border-radius: 9999px;     /* rounded-full */
+}
+
+/* Hover opcional */
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background-color: #1f2937; /* Tailwind bg-gray-800 */
+}
+
+/* Firefox */
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: #111827 transparent;
+}

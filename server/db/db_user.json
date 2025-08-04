@@ -1,0 +1,35 @@
+{
+  "userId": "user_001",
+  "name": "Maria Gonzalez",
+  "email": "maria@example.com",
+  "preferences": {
+    "categories": ["smartphones", "laptops", "gaming"],
+    "brands": ["Apple", "Samsung", "Dell", "ASUS"],
+    "priceRange": { "min": 200, "max": 2000 },
+    "features": ["high_resolution", "gaming", "portability"]
+  },
+  "behavior": {
+    "recentlyViewed": [
+      { "productId": "p001", "timestamp": "2025-08-03T10:30:00Z", "category": "smartphones" },
+      { "productId": "p005", "timestamp": "2025-08-03T09:15:00Z", "category": "laptops" },
+      { "productId": "p008", "timestamp": "2025-08-02T16:45:00Z", "category": "gaming" }
+    ],
+    "purchases": [
+      { "productId": "p003", "date": "2025-07-15", "category": "smartphones", "price": 899 },
+      { "productId": "p006", "date": "2025-06-20", "category": "accessories", "price": 79 }
+    ],
+    "wishlist": ["p002", "p007", "p009"],
+    "searchHistory": ["iPhone 15", "gaming laptop", "wireless earbuds"],
+    "categoryViews": {
+      "smartphones": 45,
+      "laptops": 32,
+      "gaming": 28,
+      "accessories": 15
+    }
+  },
+  "demographics": {
+    "age": 28,
+    "location": "Soacha, Cundinamarca",
+    "occupation": "developer"
+  }
+}
