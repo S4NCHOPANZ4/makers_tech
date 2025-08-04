@@ -9,58 +9,50 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser'); 
 const cors = require('cors');
-// const connectDB = require('./db/db_connection.js')
 
-// Routes 
 const userRoutes = require('./routes/user/user_routes.js');
 const apiRoutes = require('./routes/api/api_routes.js');
-const aiRoutes = require('./routes/ai/ai_routes.js'); // Nueva ruta de IA
+const aiRoutes = require('./routes/ai/ai_routes.js');
 
 const app = express();
 const port = process.env.PORT || 3030;
 
-// App use middlewares
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); 
 app.use(express.json());
 
-// CORS configuration
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"], // Agregado puerto adicional
+    origin: ["https://makers-tech.vercel.app/"], 
     credentials: true,
 }));
   
-// Session configuration
 app.use(session({
-  secret: process.env.SECRET || 'fallback-secret-key', // Fallback para desarrollo
+  secret: process.env.SECRET || 'fallback-secret-key', 
   resave: false,
   saveUninitialized: true,
   cookie: { 
     secure: false,
-    maxAge: 24 * 60 * 60 * 1000 // 24 horas
+    maxAge: 24 * 60 * 60 * 1000 
   } 
 }));
 
-// Rate limiting para rutas de IA (opcional)
 const rateLimit = require('express-rate-limit');
 const aiLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutos
-  max: 100, // límite de 100 requests per IP
+  windowMs: 15 * 60 * 1000, 
+  max: 100,
   message: {
     success: false,
     error: 'Demasiadas consultas, intenta de nuevo en 15 minutos'
   }
 });
 
-// Middleware de logging personalizado
 app.use((req, res, next) => {
   const timestamp = new Date().toISOString();
   console.log(`[${timestamp}] ${req.method} ${req.path} - IP: ${req.ip}`);
   next();
 });
 
-// Routes
 app.use('/api', userRoutes);
 app.use('/apiv1', apiRoutes);
 app.use('/ai', aiLimiter, aiRoutes); 
